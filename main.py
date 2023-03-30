@@ -1,5 +1,4 @@
-import csv
-import pymorphy2
-import re
+from question_assert_equal import assert_equal
 
-morph = pymorphy2.MorphAnalyzer(lang='eng')
+text = input("Enter your question: ")
+print(assert_equal(text))

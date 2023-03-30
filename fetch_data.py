@@ -13,7 +13,7 @@ for row in answers:
 cur.execute('SELECT id, question FROM public.chat_bot;')
 questions = cur.fetchall()
 for row in questions:
-    questions[row[0]] = row[1]
+    question[row[0]] = row[1]
 
 cur.close()
 conn.close()
