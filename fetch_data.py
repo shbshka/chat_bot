@@ -1,12 +1,5 @@
-import psycopg2
+from database_data import conn
 
-conn = psycopg2.connect(
-    database="chat_bot",
-    user="postgres",
-    password="",
-    host="127.0.0.1",
-    port="1234"
-)
 answer_id = []
 answer = dict()
 question = dict()
